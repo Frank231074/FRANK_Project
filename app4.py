@@ -15,3 +15,22 @@ j_column_values = []
 # B列の値を取得
 for cell in ws["B"]:
     b_column_values.append(cell.value)
+
+# E列の値を取得
+for cell in ws["E"]:
+    e_column_values.append(cell.value)
+
+# J列の値を取得
+for cell in ws["J"]:
+    j_column_values.append(cell.value)
+
+matched_list = []
+for b_column in b_column_values:
+    for j_column in j_column_values:
+        if b_column == j_column:
+            matched_list.append(b_column)
+
+
+print(matched_list)
+# print(e_column_values)
+# print(j_column_values)
