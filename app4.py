@@ -48,7 +48,7 @@ for row, cell in enumerate(ws["E"][1:], start=2):
 
 
 # 名前を付けて保存
-wb.save("food002.xlsx")
+wb.save("result001.xlsx")
 
 # print(b_column_values)
 # print(e_column_values)
