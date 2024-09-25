@@ -36,6 +36,12 @@ for b_column in b_column_values:
         if b_column == j_column:
             matched_list.append(b_column)
 
+matched_list_E = []
+for e_column in e_column_values:
+    for j_column in j_column_values:
+        if e_column == j_column:
+            matched_list_E.append(e_column)
+
 fill_color = PatternFill(start_color="FFFF00", end_color="FFFF00", fill_type="solid")
 
 for row, cell in enumerate(ws["B"][1:], start=2):
@@ -43,7 +49,7 @@ for row, cell in enumerate(ws["B"][1:], start=2):
         ws[f"B{row}"].fill = fill_color
 
 for row, cell in enumerate(ws["E"][1:], start=2):
-    if cell.value in matched_list:
+    if cell.value in matched_list_E:
         ws[f"E{row}"].fill = fill_color
 
 
