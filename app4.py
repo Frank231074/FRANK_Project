@@ -36,7 +36,7 @@ for b_column in b_column_values:
         if b_column == j_column:
             matched_list_B.append(b_column)
 
-#　B列とJ列の値がマッチしている値を取得
+#　E列とJ列の値がマッチしている値を取得
 matched_list_E = []
 for e_column in e_column_values:
     for j_column in j_column_values:
